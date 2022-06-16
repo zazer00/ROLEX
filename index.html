@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 모바일은 화면크기를 자동으로 줄여서 표현하는 방식. 1:1사이즈의 대응을 위하여 viewport코드를 추가한다 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROLEX</title>
+    <!-- 제이쿼리 설치 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+
+  </script>
+   <script src="scroll_h.js"></script>
+  <link rel="stylesheet" href="jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="jquery.bxslider.js"></script>
+  <script src="jquery.fittext.js"></script>
+  <script src="jquery.lettering.js"></script>
+  <script src="jquery.textillate.js"></script>
+  <link rel="stylesheet" href="animate.css">
+  <script>
+	$(document).ready(function(){
+
+
+               let slide = 0
+            $('#right_bt').click(function(){
+                slide = slide -1260;
+                if(slide <-1260){slide = 0}
+                $('.page5_slide').stop().animate({'left':slide},500)
+
+            })
+           
+            $('#left_bt').click(function(){
+                slide = slide +1260
+                if(slide > 0){ slide = -1260}
+                $('.page5_slide').stop().animate({'left':slide},500)
+
+            })
+            let slide2 = 0
+            $('#right_bt2').click(function(){
+                slide2 = slide2 - 1180 ;
+                if(slide2 <-2360){slide2 = 0}
+                // $('p').text(slide2)
+                $('#page6_slide').stop().animate({'left':slide2},500)
+            })
+            $('#left_bt2').click(function(){
+                slide2 = slide2 + 1180 ;
+                if(slide2 > 0){slide2 = -2360}
+                // $('p').text(slide2)
+                $('#page6_slide').stop().animate({'left':slide2},500)
+            })
+
+
+            $('#main_page_img1').click(function(){
+                $(this).animate({'marginLeft':'962px','marginTop':'100px'},500);
+                $('#main_page_vedio1').delay(500).animate({'opacity':'1','marginLeft':'0'},500)
+                $('#main_page_vedio1_title1').animate({'marginTop':'0','opacity':'1'},500)
+                $('.main_page_vedio1_back_bt1').animate({'marginRight':'0','opacity':'1'},500)
+                $('#main_page2_text1').hide(500);
+                $('#main_page2_text2').hide(500);
+                $('#main_page_img2').hide(500);
+                $('#main_page_img3').hide(500);
+                $('#main_page_img4').hide(500);
+                $('#main_page_img5').hide(500);
+
+            })
+            $('.main_page_vedio1_back_bt1').click(function(){
+                $(this).animate({'marginRight':'500px','opacity':'0'},100)
+                $('#main_page_img1').animate({'marginLeft':'0','marginTop':'0'},500)
+                $('#main_page_vedio1').animate({'marginLeft':'-1500px','opacity':'0'},100)
+                $('#main_page_vedio1_title1').animate({'marginTop':'-500px','opacity':'0'},10)
+                $('#main_page2_text1').show(500);
+                $('#main_page2_text2').show(500);
+                $('#main_page_img2').show(500);
+                $('#main_page_img3').show(500);
+                $('#main_page_img4').show(500);
+                $('#main_page_img5').show(500);
+            })
+            // 
+            $('#main_page_img2').click(function(){
+                $(this).animate({'marginLeft':'962px','marginTop':'100px'},500);
+                $('#main_page_vedio2').delay(500).animate({'opacity':'1','marginLeft':'0'},500)
+                $('#main_page_vedio1_title2').animate({'marginTop':'0','opacity':'1'},500)
+                $('.main_page_vedio1_back_bt2').animate({'marginRight':'0','opacity':'1'},500)
+                $('#main_page2_text1').hide(500);
+                $('#main_page2_text2').hide(500);
+                $('#main_page_img1').hide(500);
+                $('#main_page_img3').hide(500);
+                $('#main_page_img4').hide(500);
+                $('#main_page_img5').hide(500);
+
+            })
+            $('.main_page_vedio1_back_bt2').click(function(){
+                $(this).animate({'marginRight':'500px','opacity':'0'},100)
+                $('#main_page_img2').animate({'marginLeft':'0','marginTop':'0'},500)
+                $('#main_page_vedio2').animate({'marginLeft':'-1500px','opacity':'0'},100)
+                $('#main_page_vedio1_title2').animate({'marginTop':'-500px','opacity':'0'},10)
+                $('#main_page2_text1').show(500);
+                $('#main_page2_text2').show(500);
+                $('#main_page_img1').show(500);
+                $('#main_page_img3').show(500);
+                $('#main_page_img4').show(500);
+                $('#main_page_img5').show(500);
+            })
+            // //////////
+            $('#main_page_img3').click(function(){
+                $(this).animate({'marginLeft':'862px','marginBottom':'250px'},500);
+                $('#main_page_vedio3').delay(500).animate({'opacity':'1','marginLeft':'0'},500)
+                $('#main_page_vedio1_title3').animate({'marginTop':'-50px','opacity':'1'},500)
+                $('.main_page_vedio1_back_bt3').animate({'marginRight':'0','opacity':'1'},500)
+                $('#main_page2_text1').hide(500);
+                $('#main_page2_text2').hide(500);
+                $('#main_page_img1').hide(500);
+                $('#main_page_img2').hide(500);
+                $('#main_page_img4').hide(500);
+                $('#main_page_img5').hide(500);
+
+            })
+            $('.main_page_vedio1_back_bt3').click(function(){
+                $(this).animate({'marginRight':'500px','opacity':'0'},100)
+                $('#main_page_img3').animate({'marginLeft':'0','marginBottom':'0'},500)
+                $('#main_page_vedio3').animate({'marginLeft':'-1500px','opacity':'0'},100)
+                $('#main_page_vedio1_title3').animate({'marginTop':'-500px','opacity':'0'},10)
+                $('#main_page2_text1').show(500);
+                $('#main_page2_text2').show(500);
+                $('#main_page_img1').show(500);
+                $('#main_page_img2').show(500);
+                $('#main_page_img4').show(500);
+                $('#main_page_img5').show(500);
+            })
+            // ////
+            $('#main_page_img4').click(function(){
+                $(this).animate({'left':'940px','marginBottom':'250px'},500);
+                $('#main_page_vedio4').delay(500).animate({'opacity':'1','marginLeft':'0'},500)
+                $('#main_page_vedio1_title4').animate({'marginTop':'-50px','opacity':'1'},500)
+                $('.main_page_vedio1_back_bt4').animate({'marginRight':'0','opacity':'1'},500)
+                $('#main_page2_text1').hide(500);
+                $('#main_page2_text2').hide(500);
+                $('#main_page_img1').hide(500);
+                $('#main_page_img2').hide(500);
+                $('#main_page_img3').hide(500);
+                $('#main_page_img5').hide(500);
+
+            })
+            $('.main_page_vedio1_back_bt4').click(function(){
+                $(this).animate({'marginRight':'500px','opacity':'0'},100)
+                $('#main_page_img4').animate({'marginAuto':'0','marginBottom':'0','left':'0'},500)
+                $('#main_page_vedio4').animate({'marginLeft':'-1500px','opacity':'0'},100)
+                $('#main_page_vedio1_title4').animate({'marginTop':'-500px','opacity':'0'},10)
+                $('#main_page2_text1').show(500);
+                $('#main_page2_text2').show(500);
+                $('#main_page_img1').show(500);
+                $('#main_page_img2').show(500);
+                $('#main_page_img3').show(500);
+                $('#main_page_img5').show(500);
+            })
+            // //////////////////
+            $('#main_page_img5').click(function(){
+                $(this).animate({'right':'362px','marginBottom':'250px'},500);
+                $('#main_page_vedio5').delay(500).animate({'opacity':'1','marginLeft':'0'},500)
+                $('#main_page_vedio1_title5').animate({'marginTop':'-50px','opacity':'1'},500)
+                $('.main_page_vedio1_back_bt5').animate({'marginRight':'0','opacity':'1'},500)
+                $('#main_page2_text1').hide(500);
+                $('#main_page2_text2').hide(500);
+                $('#main_page_img1').hide(500);
+                $('#main_page_img2').hide(500);
+                $('#main_page_img3').hide(500);
+                $('#main_page_img4').hide(500);
+
+            })
+            $('.main_page_vedio1_back_bt5').click(function(){
+                $(this).animate({'marginRight':'500px','opacity':'0'},100)
+                $('#main_page_img5').animate({'right':'462px','marginBottom':'0',},500)
+                $('#main_page_vedio5').animate({'marginLeft':'-1500px','opacity':'0'},100)
+                $('#main_page_vedio1_title5').animate({'marginTop':'-500px','opacity':'0'},10)
+                $('#main_page2_text1').show(500);
+                $('#main_page2_text2').show(500);
+                $('#main_page_img1').show(500);
+                $('#main_page_img2').show(500);
+                $('#main_page_img3').show(500);
+                $('#main_page_img4').show(500);
+            })
+            //////////////////////////
+
+
+            $('#main1_slide_box').animate({'marginLeft':'50px','opacity':'1'},1600)
+            $('#main_logo_box1').animate({'marginTop':'0px','opacity':'1'},1600)
+            $('#logo_img1').animate({'opacity':'1'},1800)
+            // $('.menu_bt').animate({'marginRight':'0','opacity':'1'},1600)
+            $('.sns_bt_line1').animate({'marginRight':'0','opacity':'1'},1800)
+            // $('#scroll_bt').animate({'right':'90px','opacity':'1'},2500)
+
+
+
+
+            sec_age = 0; sec_age1 = 0 ; sec_age2 = 0;
+            sec_age3 = 0;  sec_age4 = 0; sec_age5 = 0; sec_age6 = 0 ;
+            sec_age7 = 0; sec_age8 = 0 ;
+            sec_age9 = 0; sec_age10 = 0;
+            sec_age11 = 0;
+        $(window).scroll(function(){
+            sc = $(window).scrollTop();
+            $('#sc').text(sc)
+            //페이지2 스크롤 이벤트
+            if(sc >= 200){
+                        $('header').css({'position':'fixed'})
+                        
+                    }
+                    else if(sc < 200){
+                        $('header').css({'position':'absolute'})
+                    }
+                    if(sc < 2800){
+                        $('#logo_img1>img').attr({'src':'icon/logo.png'});
+                        $('#menu_nav>li').css({'color':'#000'})
+                        $('.menu_bt>img').attr({'src':'icon/menu_bt.png'})
+                        $('#lang>img').attr({'src':'img/languege.png'})
+                        $('#lang>h3').css({'color':'#000'})
+                    }
+
+                    if(sc >= 2800){
+                        $('#logo_img1>img').attr({'src':'icon/logo_white.png'});
+                        $('#menu_nav>li').css({'color':'#fff'})
+                        $('.menu_bt>img').attr({'src':'icon/menu_bt_w.png'})
+                        $('#lang>img').attr({'src':'img/languege_w.png'})
+                        $('#lang>h3').css({'color':'#fff'})
+                        
+                    }
+                    if(sc >= 3600){
+                        $('#logo_img1>img').attr({'src':'icon/logo.png'});
+                        $('#menu_nav>li').css({'color':'#000'})
+                        $('.menu_bt>img').attr({'src':'icon/menu_bt.png'})
+                        $('#lang>img').attr({'src':'img/languege.png'})
+                        $('#lang>h3').css({'color':'#000'})
+                    }
+                    
+                    if(sc >= 5500){
+                        $('#logo_img1>img').attr({'src':'icon/logo_white.png'});
+                        $('#menu_nav>li').css({'color':'#fff'})
+                        $('.menu_bt>img').attr({'src':'icon/menu_bt_w.png'})
+                        $('#lang>img').attr({'src':'img/languege_w.png'})
+                        $('#lang>h3').css({'color':'#fff'})
+                    }
+                    if(sc >= 6400){
+                        $('#logo_img1>img').attr({'src':'icon/logo.png'});
+                        $('#menu_nav>li').css({'color':'#000'})
+                        $('.menu_bt>img').attr({'src':'icon/menu_bt.png'})
+                        $('#lang>img').attr({'src':'img/languege.png'})
+                        $('#lang>h3').css({'color':'#000'})
+                    }
+
+            if(sc >= 800){
+                sec_age = sec_age +1;
+                if(sec_age ==1){
+
+                    $('#main_page2').animate({'opacity':'1'},500)
+                    $('.sns_bt_line2').animate({'marginRight':'0','opacity':'1'},1500)
+                    $('#main_page_img1').animate({'marginLeft':'0','opacity':'1'},1600)
+                    $('#main_page_img2').animate({'marginRight':'0','opacity':'1'},1600)
+                    $('#main_page_img3').animate({'marginBottom':'0','opacity':'1'},1600)
+                    $('#main_page_img4').animate({'marginBottom':'0','opacity':'1'},1600)
+                    $('#main_page_img5').animate({'marginBottom':'0','opacity':'1'},1600)
+                }
+            }
+            // 페이지3 스크롤 이벤트
+            if(sc >= 1750){
+                sec_age1 = sec_age1 +1;
+                if(sec_age1 ==1){
+                    $('#main_page3').animate({'opacity':'1'},500)
+                    $('.sns_bt_line3').animate({'marginRight':'0','opacity':'1'},1000)
+                    $('#main_page3_vedio').animate({'marginTop':'0','opacity':'1'},1500)
+                    $('#main_page3_title1').animate({'marginTop':'0','opacity':'1'},1200)
+                    $('#main_page3_title2').animate({'marginTop':'0','opacity':'1'},1300)
+                    $('#main_page3_img1').animate({'marginLeft':'0','opacity':'1'},1100)
+                    $('#main3_scroll').animate({'marginBottom':'0','opacity':'1'},1100)
+                    $('#main_page3_title').animate({'marginTop':'0','opacity':'1'},2500)
+
+                   
+                    let vr_num =1 ;
+                    setInterval(function(){
+                    vr_num = vr_num + 1 ;
+                    if(vr_num>200){vr_num =1;}
+                    $('#main_page3_img1>img').attr({'src':'3dd/('+vr_num+').png'},70)
+                },90)
+                }
+            }
+            //페이지4 스크롤 이벤트
+            if(sc >= 2200){
+                sec_age2 = sec_age2 +1;
+                if(sec_age2 ==1){
+                   $('#main_page4').animate({'opacity':'1'},500)
+                //    $('#main_page4_logo').animate({'marginTop':'0','opacity':'1'},1000)
+                   $('#main_page4_title').animate({'marginTop':'250px','opacity':'1'},1100)
+                   $('#main_page4_title_line').animate({'marginTop':'10px','opacity':'1'},1200)
+                   $('#main_page4_title2').animate({'marginTop':'10px','opacity':'1'},1300)
+                   $('#main_page4_bt').animate({'marginTop':'5px','opacity':'1'},1400)
+
+                   
+                }
+            }
+
+            // 페이지5 스크롤 이벤트
+            if(sc >= 3400){
+                sec_age3 = sec_age3 +1;
+                if(sec_age3 ==1){
+                   $('#main_page5').animate({'opacity':'1'},500)
+                //    $('#main_page5_logo').animate({'marginTop':'0','opacity':'1'},1000)
+                   $('.sns_bt_line5').animate({'marginRight':'0','opacity':'1'},1100)
+                //    $('.menu_bt5').animate({'marginRight':'0','opacity':'1'},1100)
+                   $('#page5_slide_box').animate({'marginTop':'0','opacity':'1'},1300)
+                   $('#button_box').animate({'marginTop':'0','opacity':'1'},1300)
+                   $('#scroll_bt5').animate({'marginBottom':'0','opacity':'1'},1300)
+                }
+            }
+            //페이지6 스크롤 이벤트
+            if(sc >= 4000){
+                sec_age4 = sec_age4 +1;
+                if(sec_age4 ==1){
+                   $('#main_page6').animate({'opacity':'1'},500)
+                //    $('#main_page6_logo').animate({'marginTop':'0','opacity':'1'},800) 
+                   $('.sns_bt_line6').animate({'marginRight':'0','opacity':'1'},1100)
+                   $('.menu_bt6').animate({'marginRight':'0','opacity':'1'},1100)
+                   $('#page6_slide_box').animate({'marginTop':'0','opacity':'1'},1300) 
+                   $('#button_box2').animate({'marginTop':'0','opacity':'1'},1300)
+                   $('#page6_title').animate({'marginLeft':'0','opacity':'1'},1300)
+                }
+                
+            }
+            // 페이지7 스크롤이벤트
+            if(sc >= 5000){
+                sec_age5 = sec_age5 +1;
+                if(sec_age5 ==1){
+                 $('#main_page7').animate({'opacity':'1'},800)
+                 $('#main_page7_title').animate({'marginLeft':'50px','opacity':'1'},1000)
+                 $('#main_page7_title_line').animate({'marginLeft':'50px','opacity':'1'},1000)
+                 $('#main_page7_title2').animate({'marginLeft':'50px','opacity':'1'},1000)
+                 $('#main_page7_bt').animate({'marginLeft':'50px','opacity':'1'},1000)
+                }
+
+                
+            }
+            //페이지8 스크롤 이벤트
+            if(sc >= 6000){
+                sec_age6 = sec_age6 +1;
+                if(sec_age6 ==1){
+                 $('#page8_video').animate({'marginLeft':'0','opacity':'1'},1100)
+                 $('#page8_video_text1').animate({'marginRight':'0','opacity':'1'},1500)
+                }
+
+                
+            }
+            if(sc >= 7050){
+                sec_age7 = sec_age7 +1;
+                if(sec_age7 ==1){
+                 $('#page8_mid_text_title1').animate({'marginTop':'0','opacity':'1'},1000)
+                 $('#page8_mid_text_title2').animate({'marginTop':'0','opacity':'1'},2000)
+                 $('#page8_mid_text_line').animate({'marginTop':'0','opacity':'1'},3000)
+                 $('#text_box_scrrol').animate({'marginTop':'0','opacity':'1'},4000)
+                }
+
+                
+            }
+
+            if(sc >= 7700){
+                sec_age8 = sec_age8 +1;
+                if(sec_age8 ==1){
+                 $('#page8_main_img').animate({'opacity':'0.3'},200)
+                }
+
+                
+            }
+            if(sc >= 7800){
+                sec_age9 = sec_age9 +1;
+                if(sec_age9 ==1){
+                 $('#page8_main_img').animate({'opacity':'0.5'},200)
+                }
+
+                
+            }
+            if(sc >= 8100){
+                sec_age10 = sec_age10 +1;
+                if(sec_age10 ==1){
+                 $('#page8_main_img').animate({'opacity':'1'},200)
+                }
+
+                
+            }
+            if(sc >= 8700){
+                sec_age11 = sec_age11 +1;
+                if(sec_age11 ==1){
+                $('#page8_bottom_video').animate({'marginBottom':'0','opacity':'1'},1000)
+                $('#page8_bottom_title1').animate({'marginLeft':'0','opacity':'1'},1000)
+                $('#page8_bottom_logo').animate({'opacity':'1'},1000)    
+                $('#page8_bottom_title2').animate({'opacity':'1'},1000)
+
+
+
+                }
+
+                
+            }
+            
+
+        })
+        $('#main1_slide').bxSlider({
+            'mode':'fade',
+            captions:true,
+            speed:2000,
+            pager:true,
+            'pagerType':'full',
+            auto:true,
+            autoStart:true,
+            pause:2000,
+        });
+        
+           setInterval(function(){
+
+            $('#scroll_bt_box>li:last-child').animate({'marginTop':'0px'},490)
+            $('#scroll_bt_box>li:last-child').animate({'marginTop':'15px'},490)
+           },1000)
+            setInterval(function(){
+                $('#main3_scroll>li:last-child').animate({'marginTop':'0'},490)
+                $('#main3_scroll>li:last-child').animate({'marginTop':'15px'},490)
+            },1000)
+            setInterval(function(){
+                $('#scroll_bt_box2>li:last-child').animate({'marginTop':'0px'},490)
+                $('#scroll_bt_box2>li:last-child').animate({'marginTop':'15px'},490)
+            },1000)
+            setInterval(function(){
+                $('#scroll_bt_box5>li:last-child').animate({'marginTop':'0px'},490)
+                $('#scroll_bt_box5>li:last-child').animate({'marginTop':'15px'},490)
+
+            },1000)
+            setInterval(function(){
+                $('#scroll_bt_box6>li:last-child').animate({'marginTop':'0px'},490)
+                $('#scroll_bt_box6>li:last-child').animate({'marginTop':'15px'},490)
+            },1000)
+            setInterval(function(){
+                $('#text_box_scrrol>li:last-child').animate({'marginTop':'0px'},490)
+                $('#text_box_scrrol>li:last-child').animate({'marginTop':'15px'},490)
+            },1000)
+            
+	});
+  </script>
+  <style>
+      @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+      /* font-family: 'PT Serif', serif; */
+      @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Tiro+Gurmukhi:ital@0;1&display=swap');
+      /* font-family: 'Tiro Gurmukhi', serif; */
+      @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+      /* font-family: 'Lato', sans-serif; */
+      * { margin: 0; padding: 0; list-style: none; }
+      a { text-decoration: none; color: inherit;}
+      body,html{width: 1920px;height: 100%;}
+      body{}
+      p{font-size: 60px;text-align: center;position: fixed;top: 0;left: 0;right: 0;margin: auto;display: none;}
+    #pageframe{width: 100%;height: 12230px;overflow: hidden;}
+    /* 페이지1 */
+    #main_page1{width: 100vw;height: 100vh;background-color: #EFECEC;overflow: hidden;position: relative;}
+    #lang{height: 60px;height: 36px;float: right;margin-top: 25px;margin-right: 90px;}
+    #lang>h3{float: right;margin-left: 10px;line-height: 36px;}
+    #lang>img{width: 20px;height: 20px;float: left;margin-top: 8px;}
+    #main_logo_box1{width: 1920px;height: 145px;position: absolute;background-color: transparent;z-index: 999;transition: 0.5s;margin-top: -145px;opacity: 0;}
+    #menu_nav_box{width: 600px;height: 50px;position: absolute;right: 80px;top: 0;bottom: 50px;margin: auto;}
+    #menu_nav{width: 600px;height: 50px;}
+    #menu_nav>li{width: 90px;height: 50px;float: left;box-sizing: border-box;line-height: 50px;text-align: center;font-family: 'Lato', sans-serif;font-size: 14px;font-weight: 400;cursor: pointer;transition: 0.5s;}
+    #menu_nav>li:hover{text-decoration: underline;transform: scale(1.1);}
+    #menu_nav>li:after{content: "";margin-left: 30px;}
+    #menu_nav>li:last-child::after{content: "";}
+    #header1{width: 1920px;height: 145px;}
+    #logo_img1{width: 90px;height: 90px;position: absolute;left: 0;right: 0;margin: auto;opacity: 0;top: 0px;}
+    #logo_img1>img{width: 100%;height: 100%;}
+    /* #main1_title{width: 600px;height: 700px;position: absolute;right:0px;}
+    #main1_title>h2{font-size: 30px;font-family: 'Tiro Gurmukhi', serif;}
+    #main1_title>h3{font-size: 30px;font-family: 'Tiro Gurmukhi', serif;margin-top: 100px;}
+    #main1_title>h4{font-size: 30px;font-family: 'Tiro Gurmukhi', serif;margin-top: 200px;} */
+    .menu_bt{width: 30px;height: 30px;position: absolute;left: 50px;margin-right: 80%;margin-top: 30px;cursor: pointer;}
+    .menu_bt>img{width: 100%;}
+    #main1_slide_box{width: 1600px;height: 800px;box-shadow: 10px 10px 12px -4px rgba(0,0,0,0.75);margin-left: -1250px;overflow: hidden;position: relative;opacity: 0;bottom: 50px;}
+    #main1_slide{width: 8000px;height: 800px;position: absolute;left: 0;}
+    #main1_slide>li{width: 1600px;height: 800px;float: left;}
+    #main1_slide>li>img{width: 100%;height: 800px;}
+    .main1_slideimg{width: 100%;height: 700px;}
+    .sns_bt_line1{width: 70px;height: 450px;position: absolute;right: 75px;bottom: -200px;margin-right: -500px;opacity: 0;}
+    .sns_bt{width: 100%;}
+    .sns_bt>li{width: 34px;height: 34px;margin-top: 10px;cursor: pointer;}
+    .sns_bt>li>a{width: 100%;}
+    .sns_bt>li>a:first-child{margin-top: 0;}
+    .sns_bt>li>a:last-child{margin-top: 0px;width: 100%;}
+    .sns_bt>li:nth-child(3)>a>img{width: 100%;margin-top: -15px;}
+    .sns_bt>li:nth-child(4)>a>img{width: 100%;margin-top: -15px;}
+    .sns_bt>li>a>img{width: 100%;}
+    #scroll_bt{position: absolute;width: 19px;height: 55px;right: 200px;opacity: 1;bottom: 100px;}
+    #scroll_bt_box{text-align: center;}
+    #scroll_bt_box>li:last-child{margin-top: 20px;margin-right: 7px;}
+    /* 페이지2 */
+    #main_page2{position: relative;width: 100vw;height: 100vh;background-color: #EFECEC;opacity: 0;}
+    #main2_title{width: 287px;height: 69px;position: absolute;left: 0;right: 0;margin: auto;top: 200px;}
+    .sns_bt_line2{width: 70px;height: 450px;position: absolute;right: 75px;bottom: -200px;margin-right: -500px;opacity: 0;}
+    .menu_bt2{width: 30px;height: 30px;position: absolute;right: 100px;margin-left: 80%;margin-top: 60px;margin-right: -200px;opacity: 0;}
+    #main_page2_text1{width: 428px;height: 99px;position: absolute;left: 5px;right: 0;margin: auto;top: 300px;}
+    #main_page2_text1>img{width: 100%;}
+    #main_page2_text2{width: 320px;height: 152px;position: absolute;left: 0;right: 0;margin: auto;top: 430px;}
+    #main_page_img1{width: 232px;height: 258px;position: absolute;left: 362px;top: 300px;cursor: pointer;margin-left: -500px;opacity: 0;}
+    #main_page_img1:hover>img{transform: scale(1.1);}
+    #main_page_img1>img{width: 100%;transition: 0.5s;}
+    #main_page_img2{width: 232px;height: 258px;position: absolute;right: 362px;top: 300px;cursor: pointer;margin-right: -500px;opacity: 0;}
+    #main_page_img2:hover>img{transform: scale(1.1);}
+    #main_page_img2>img{width: 100%;transition: 0.5s;}
+    #main_page_img3{width: 232px;height: 258px;position: absolute;left: 462px;bottom: 80px;cursor: pointer;margin-bottom: -500px;opacity: 0;}
+    #main_page_img3:hover>img{transform: scale(1.1);}
+    #main_page_img3>img{width: 100%;transition: 0.5s;}
+    #main_page_img4{width: 232px;height: 258px;position: absolute;left: 0;right: 0;margin: auto;bottom: 80px;cursor: pointer;margin-bottom: -500px;opacity: 0;}
+    #main_page_img4:hover>img{transform: scale(1.1);}
+    #main_page_img4>img{width: 100%;transition: 0.5s;}
+    #main_page_img5{width: 232px;height: 258px;position: absolute;right: 462px;bottom: 80px;cursor: pointer;margin-bottom: -500px;opacity: 0;}
+    #main_page_img5:hover>img{transform: scale(1.1);}
+    #main_page_img5>img{width: 100%;transition: 0.5s;}
+    /*  */
+    #main_page_vedio1{width: 1180px;height: 620px;position: absolute;left: 100px;top: 300px;opacity: 0;margin-left: -1500px;}
+    #main_page_vedio1>video{width: 100%;}
+    #main_page_vedio1_title1{width: 286px;height: 52px;position: absolute;left: 1300px;top: 350px;margin-top: -500px;opacity: 0;}
+    #main_page_vedio1_title1>img{width: 100%;}
+    .main_page_vedio1_back_bt1{width: 127px;height: 47px;position: absolute;right: 462px;bottom: 150px;cursor: pointer;opacity: 0;margin-right: -500px;}
+    /*  */
+    #main_page_vedio2{width: 1180px;height: 620px;position: absolute;left: 100px;top: 300px;opacity: 0;margin-left: -1500px;}
+    #main_page_vedio2>video{width: 100%;}
+    #main_page_vedio1_title2{width: 286px;height: 52px;position: absolute;left: 1300px;top: 350px;margin-top: -500px;opacity: 0;}
+    #main_page_vedio1_title2>img{width: 100%;}
+    .main_page_vedio1_back_bt2{width: 127px;height: 47px;position: absolute;right: 462px;bottom: 150px;cursor: pointer;opacity: 0;margin-right: -500px;}
+    /*  */
+    #main_page_vedio3{width: 1180px;height: 620px;position: absolute;left: 100px;top: 300px;opacity: 0;margin-left: -1500px;}
+    #main_page_vedio3>video{width: 100%;}
+    #main_page_vedio1_title3{width: 286px;height: 52px;position: absolute;left: 1300px;top: 350px;margin-top: -500px;opacity: 0;}
+    #main_page_vedio1_title3>img{width: 100%;}
+    .main_page_vedio1_back_bt3{width: 127px;height: 47px;position: absolute;right: 462px;bottom: 150px;cursor: pointer;opacity: 0;margin-right: -500px;}
+    /*  */
+    #main_page_vedio4{width: 1180px;height: 620px;position: absolute;left: 100px;top: 300px;opacity: 0;margin-left: -1500px;}
+    #main_page_vedio4>video{width: 100%;}
+    #main_page_vedio1_title4{width: 286px;height: 52px;position: absolute;left: 1300px;top: 350px;margin-top: -500px;opacity: 0;}
+    #main_page_vedio1_title4>img{width: 100%;}
+    .main_page_vedio1_back_bt4{width: 127px;height: 47px;position: absolute;right: 462px;bottom: 150px;cursor: pointer;opacity: 0;margin-right: -500px;}
+    /*  */
+    #main_page_vedio5{width: 1180px;height: 620px;position: absolute;left: 100px;top: 300px;opacity: 0;margin-left: -1500px;}
+    #main_page_vedio5>video{width: 100%;}
+    #main_page_vedio1_title5{width: 286px;height: 52px;position: absolute;left: 1300px;top: 350px;margin-top: -500px;opacity: 0;}
+    #main_page_vedio1_title5>img{width: 100%;}
+    .main_page_vedio1_back_bt5{width: 127px;height: 47px;position: absolute;right: 462px;bottom: 150px;cursor: pointer;opacity: 0;margin-right: -500px;}
+    #scroll_bt2{position: absolute;width: 80px;height: 55px;right: 0px;bottom: 22px;left: 0;margin: auto;}
+    #scroll_bt_box2{text-align: center;}
+    #scroll_bt_box2>li:last-child{margin-top: 20px;margin-right: 7px;}
+    #sc{position: fixed;top: 0;z-index: 10;font-size: 50px;color: red;}
+    /* 페이지3 */
+    #main_page3{width: 100vw;height: 100vh;background-color: #EFECEC;position: relative;opacity: 0;}
+    .sns_bt_line3{width: 70px;height: 450px;position: absolute;right: 75px;bottom: -200px;margin-right: -500px;opacity: 0;}
+    #main_page3_title{width: 713px;height: 70px;position: absolute;top: 200px;left: 600px;opacity: 0;margin-top: -200px;}
+    #main_page3_img1{width: 666px;height: 375px;position: absolute;top: 400px;left: -50px;margin-left: -500px;opacity: 0;}
+    #main_page3_img1>img{width: 100%;}
+    
+    #main_page3_logo1>img{width: 100%;}
+    #main_page3_vedio{width: 940px;height: 530px;position: absolute;left: 600px;top: 300px;margin-top: -300px;opacity: 0;}
+    #main_page3_vedio>video{width: 100%;}
+    #main_page3_title1{width: 336px;height: 50px;position: absolute;left: 110px;top: 250px;margin-top: -300px;opacity: 0;}
+    #main_page3_title1>img{width: 100%;}
+    #main_page3_title2{width: 520px;height: 34px;position: absolute;top: 320px;left: 30px;margin-top: -300px;opacity: 0;}
+    #main_page3_title2>img{width: 100%;}
+    #main3_scroll{width: 80px;height: 60px;position: absolute;left: 0;right: 0;bottom: 20px;margin: auto;margin-bottom: -400px;opacity: 0;}
+    #main3_scroll>li{text-align: center;}
+    #main3_scroll>li:last-child{}
+    
+    /* 페이지4 */
+    #main_page4{width: 100vw;height: 100vh;position: relative;background-color: #fff;opacity: 0;overflow: hidden;}
+    #main_page4>video{width: 100%;position: absolute;left: 50%;margin-left: -980px;}
+    #main_page4_cover{width: 100vw;height: 980px;background-color: rgba(0, 0, 0, 0.438);position: absolute;left: 0;top: 80px;}
+    #main_page4_logo{text-align: center;position: absolute;top: -55px;left: 0;right: 0;margin-top: -300px;opacity: 0;}
+    #main_page4_logo>img{}
+    #main_page4_title{margin-left: 50px;margin-top: 0px;opacity: 0;}
+    #main_page4_title_line{margin-left: 50px;margin-top: 0px;opacity: 0;}
+    #main_page4_title2{margin-left: 50px;margin-top: 0px;opacity: 0;}
+    #main_page4_bt{margin-top: 5px;margin-left: 50px;opacity: 0;}
+    /* 페이지5*/
+    #main_page5{width: 100vw;height: 100vh;position: relative;opacity: 0;}
+    #main_page5_title{width: 116px;height: 69px;position: absolute;left: 0;right: 0;margin: auto;top: 200px;}
+    .sns_bt_line5{width: 70px;height: 450px;position: absolute;right: 75px;bottom: -200px;margin-right: -500px;opacity: 0;}
+    #page5_slide_box{width: 1260px;height: 470px;position: absolute;top: 300px;left: 330px;overflow: hidden;margin-top: 300px;opacity: 0;}
+    .page5_slide{width: 2520px;height: 470px;position: absolute;left: 0;}
+    .page5_slide>li{width: 420px;height: 470px;float: left;}
+    .page5_slide_text{width: 420px;height: 56px;text-align: center;margin-top: -15px;}
+    #button_box{width: 1300px;height: 39px;position: absolute;left: 0;right: 0;top: 480px;margin: auto;margin-top: 200px;opacity: 0;}
+    #left_bt{float: left;cursor: pointer;transition: 0.5s;}
+    #left_bt:hover{transform: scale(1.3);}
+    #right_bt{float: right;cursor: pointer;transition: 0.5s;}
+    #right_bt:hover{transform: scale(1.3);}
+    #scroll_bt5{width: 80px;height: 60px;position: absolute;left: 0;right: 0;bottom: 20px;margin: auto;margin-bottom: -400px;opacity: 0;}
+    #scroll_bt_box5{text-align: center;}
+    #scroll_bt_box5>li:last-child{margin-left: 5px;margin-top: 15px;}
+    /* 페이지6 */
+    #main_page6{width: 100vw;height: 100vh;position: relative;background-color: #fff;opacity: 0;}
+    .sns_bt_line6{width: 70px;height: 450px;position: absolute;right: 75px;bottom: -200px;margin-right: -500px;opacity: 0;}
+    .menu_bt6{width: 30px;height: 30px;position: absolute;right: 100px;margin-left: 80%;margin-top: 60px;margin-right: -200px;opacity: 0;}
+    /* #main_page6_logo{width: 169px;height: 169px;position: absolute;left: 0;right: 0;margin: auto;margin-top: -400px;opacity: 0;} */
+    #page6_title{width: 130px;height: 50px;position: absolute;left: 320px;top: 250px;margin-left: -600px;opacity: 0;}
+    #page6_slide_box{width: 1180px;height: 550px;position: absolute;left: 320px;top: 330px;overflow: hidden;margin-top: 200px;opacity: 0;}
+    #page6_slide{width: 3540px;height: 550px;position: absolute;left: 0;}
+    #page6_slide>li{width: 1180px;height: 550px;float: left;}
+    #page6_slide_wrap1{width: 550px;height: 550px;float: left;}
+    #page6_slide_wrap1>img{width: 100%;}
+    #page6_slide_wrap2{width: 550px;height: 550px;float: right;}
+    #page6_slide_wrap2>h3{margin-top: 20px;}
+    #page6_slide_wrap2>h4{margin-top: 30px;}
+    #page6_slide_wrap2>h5{margin-top: 50px;}
+    /*  */
+    #page6_slide_wrap4{width: 360px;height: 360px;float: left;margin-top: 50px;}
+    #page6_slide_wrap4>img{width: 100%;height: 100%;}
+    #page6_slide_wrap5{width: 360px;height: 360px;float: left;margin-top: 50px;}
+    #page6_slide_wrap5>h3{width: 360px;height: 180px;}
+    #page6_slide_wrap5>h4{width: 360px;height: 180px;}
+    #page6_slide_wrap6{width: 360px;height: 360px;float:right;margin-right: 50px;margin-top: 50px;}
+    #page6_slide_wrap6>img{width: 328px;height: 350px;}
+    /*  */
+    #page6_slide_wrap7{width: 550px;height: 550px;float: left;}
+    #page6_slide_wrap7>img{width: 100%;}
+    #page6_slide_wrap8{width: 550px;height: 550px;float: right;}
+    #page6_slide_wrap8>h3{margin-top: 20px;}
+    #page6_slide_wrap8>h4{margin-top: 30px;}
+    #page6_slide_wrap8>h5{margin-top: 50px;}
+    #button_box2{width: 1400px;height: 39px;position: absolute;left: 0;right: 0;top: 480px;margin: auto;margin-top: 200px;opacity: 0;}
+    #left_bt2{float: left;cursor: pointer;transition: 0.5s;}
+    #left_bt2:hover{transform: scale(1.3);}
+    #right_bt2{float: right;cursor: pointer;transition: 0.5s;}
+    #right_bt2:hover{transform: scale(1.3);}
+    #scroll_bt6{position: absolute;width: 19px;height: 55px;right: 200px;opacity: 1;bottom: 100px;}
+    #scroll_bt_box6{text-align: center;}
+    #scroll_bt_box6>li:last-child{margin-top: 20px;margin-right: 7px;}
+    /* 페이지7 */
+    #main_page7{width: 100vw;height: 100vh;position: relative;background-color: #fff;overflow: hidden;opacity: 0;}
+    #main_page7>video{width: 100%;position: absolute;left: 50%;margin-left: -980px;}
+    #main_page7_cover{width: 100vw;height: 95%; background-color: rgba(0, 0, 0, 0.438);position: absolute;left: 0;top: 0px;}
+    /* #main_page7_logo{text-align: center;position: absolute;top: 20px;left: 0;right: 0;margin-top: 0;} */
+    #main_page7_logo>img{}
+    #main_page7_title{margin-left: -500px;margin-top: 200px;opacity: 0;}
+    #main_page7_title_line{margin-left: -500px;margin-top: 0px;opacity: 0;}
+    #main_page7_title2{margin-left: -500px;margin-top: 0px;opacity: 0;}
+    #main_page7_bt{margin-top: 5px;margin-left: -500px;opacity: 0;}
+    #main7_scroll{width: 80px;height: 60px;position: absolute;left: 0;right: 0;bottom: 100px;margin: auto;margin-bottom: 0px;opacity: 1;}
+    #main7_scroll>li{text-align: center;}
+    #main7_scroll>li:last-child{}
+    /* 페이지8 */
+    #main_page8{width: 100vw;height: 3240px;position: relative;}
+    #page8_video{width: 1280px;height: 720px;position: absolute;left: 35px;top: 170px;opacity: 0;margin-left: -1200px;}
+    #page8_video>video{width: 100%;}   
+    #page8_video_text1{width: 480px;height:710px;position: absolute;right: 67px;top: 170px;margin-right: -500px;opacity: 0;} 
+    #page8_video_text1>h2{margin-top: 50px;}
+    #page8_video_text1>h3{margin-top: 45px;}
+    #page8_mid_text_box{width: 100vw;height: 500px;position: absolute;top: 1080px;}
+    #page8_mid_text_title1{width: 600px;height: 35px;position: absolute;left: 0;right: 0;top: 50px;margin: auto;margin-top: 150px;opacity: 0;}
+    #page8_mid_text_title2{width: 1194px;height: 53px;position: absolute;left: 0;right: 0;top: 200px;margin: auto;margin-top: 150px;opacity: 0;}
+    #page8_mid_text_line{width: 3px;height: 68px;position: absolute;left: 0;right: 0;margin: auto;top: 300px;margin-top: 150px;opacity: 0;}
+    #text_box_scrrol{width: 80px;height: 60px;position: absolute;bottom: 0;left: 0;right: 0;margin: auto;margin-top: 150px;opacity: 0;text-align: center;}
+    #text_box_scrrol>li:last-child{margin-top: 15px;}
+    #text_box_scrrol>#text_box_scrrol_img1{}
+    #text_box_scrrol>#text_box_scrrol_img2{position: absolute;bottom: 0;left: 0;right: 0;margin: auto;}
+    #page8_main_img{width: 100vw;height: 1000px;position: absolute;top: 1600px;opacity: 0;}
+    #page8_bottom_box{position: absolute;left: 150px;bottom: 120px;width: 780px;height: 360px;}
+    #page8_bottom_title1{width: 765px;height: 88px;margin-left: -300px;opacity: 0;}
+    #page8_bottom_logo{position: absolute;left: 0;right: 0;margin: auto; width: 169px;height: 169px;opacity: 0; }
+    #page8_bottom_title2{width: 280px;height: 42px;position: absolute;bottom: 60px;left: 0;right: 0;margin: auto;opacity: 0;}
+    #page8_bottom_video{width: 650px;height: 360px;position: absolute;bottom: 120px;right: 300px;opacity: 0;margin-bottom: -200px;}
+    #page8_bottom_video>video{width: 100%;}
+    /* 페이지9 */
+    #main_page9{width: 100vw;height: 1520px;background-color: #fff;position: relative;}
+    #page9_video{width: 1280px;height: 720px;position: absolute;left: 0;right: 0;margin: auto;top: 600px;}
+    #page9_video>video{width: 100%;}
+    #main_page9_text{width: 1364px;height: 51px;position: absolute;top: 200px;left: 0;    right: 0; margin: auto; text-align: center;}
+    /*  */
+
+    footer{width: 100vw;height: 900px;background-color: #706F6F;}
+  </style>
+  <style>
+    /*미디어쿼리*/
+	@media all and (min-width:320px) { /* 320~767 모바일 */
+	
+    }
+    @media all and (min-width:768px) { /* 768~1023 태블릿 */
+
+    }
+    @media all and (min-width:1024px) { /* 1024 pc */
+
+    }
+  </style>
+</head>
+<body>
+    <h1 id="sc">
+        0
+    </h1>
+    <div id="pageframe">
+        <!-- 페이지1시작 -->
+        <div id="main_page1">
+            <header id="main_logo_box1">
+                <h1 id="logo_img1">
+                    <img src="icon/logo.png" alt="" id="logo1_header">
+                </h1>
+                <div class="menu_bt">
+                    <img src="icon/menu_bt.png" alt="">
+                </div>
+                <div id="menu_nav_box">
+                    <ul id="menu_nav">
+                        <li>
+                            Home
+                        </li>
+                        <li>
+                            Watch
+                        </li>
+                        <li>
+                            Best
+                        </li>
+                        <li>
+                            Design
+                        </li>
+                        <li>
+                            History
+                        </li>
+                    </ul>
+                </div>
+                <div id="lang">
+                    <img src="img/languege.png" alt="">
+                    <h3>EN</h3>
+                </div>
+            </header>
+            <div id="header1">
+
+            </div>
+            <!-- <div id="main1_title">
+                <h2>Welcome aboard.</h2>
+                    <h3>Be with your watch</h3>
+                    <h4>with symbolic technology</h4>
+            </div> -->
+            <div id="main1_slide_box">
+                <ul id="main1_slide">
+                    <li>
+                        <img src="image/mainslide_img1.jpg" alt="" class="main1_slideimg">
+                    </li>
+                    <li>
+                        <img src="image/mainslide_img2.jpg" alt="" class="main1_slideimg">
+                    </li>
+                    <li>
+                        <img src="image/mainslide_img3.jpg" alt="" class="main1_slideimg">
+                    </li>
+                    <li>
+                        <img src="image/mainslide_img4.jpg" alt="" class="main1_slideimg">
+                    </li>
+                    <li>
+                        <img src="image/mainslide_img5.jpg" alt="" class="main1_slideimg">
+                    </li>
+                </ul>
+            </div>
+            <div class="sns_bt_line1">
+                <ul class="sns_bt">
+                    <li>
+                        <a href="https://www.instagram.com/rolex/" title="인스타링크" target="_blank">
+                            <img src="icon/insta_logo.png" alt="" >
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/c/ROLEX/featured" title="유튜브링크" target="_blank">
+                            <img src="icon/youtube_logo.png" alt="">
+                        </a>
+                       
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/rolex" title="페이스북링크" target="_blank">
+                            <img src="icon/facebook_logo.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/rolex" title="트위터링크" target="_blank">
+                            <img src="icon/twitter_logo.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+                <div id="scroll_bt">
+                    <ul id="scroll_bt_box">
+                        <li>
+                            <img src="img/Down.png" alt="">
+                        </li>
+                        <li>
+                            <img src="img/sc_arrow.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+        </div>
+        <!-- 메인페이지2 -->
+        <div id="main_page2">
+               <div id="main2_title">
+                   <img src="img/WATCH.png" alt="">
+               </div> 
+            
+            <div class="sns_bt_line2">
+                <ul class="sns_bt">
+                    <li>
+                        <a href="https://www.instagram.com/rolex/" title="인스타링크" target="_blank">
+                            <img src="icon/insta_logo.png" alt="" >
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/c/ROLEX/featured" title="유튜브링크" target="_blank">
+                            <img src="icon/youtube_logo.png" alt="">
+                        </a>
+                       
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/rolex" title="페이스북링크" target="_blank">
+                            <img src="icon/facebook_logo.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/rolex" title="트위터링크" target="_blank">
+                            <img src="icon/twitter_logo.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="main_page2_text1">
+                <img src="img/Rolex unveils new products with new expectations and innovationsin the world of watchmaking..png" alt="">
+            </div>
+            <div id="main_page2_text2">
+                <img src="img/Rolex has constantly raised the level of beauty and skill of iconic models through its constant quest for the best.  These clocks break boundaries and make them reach higher places. As usual, Rolex ha.png" alt="">
+            </div>
+            <div id="main_page_img1">
+                <img src="img/main2_img1.png" alt="">
+            </div>
+            <div id="main_page_img2">
+                <img src="img/main2_img2.png" alt="">
+            </div>
+            <div id="main_page_img3">
+                <img src="img/main2_img3.png" alt="">
+            </div>
+            <div id="main_page_img4">
+                <img src="img/main2_img4.png" alt="">
+            </div>
+            <div id="main_page_img5">
+                <img src="img/main2_img5.png" alt="">
+            </div>
+            <!-- 이미지배열 -->
+            <div id="main_page_vedio1">
+                <video src="vedio/main2_vedio1.mp4" loop autoplay muted></video>
+            </div>
+            <div id="main_page_vedio1_title1">
+                <img src="img/SUBMARINER1.png" alt="">
+            </div>
+            <div class="main_page_vedio1_back_bt1">
+                <img src="img/back_bt.png" alt="">
+            </div>
+            <!-- 이미지1 동영상 -->
+            <div id="main_page_vedio2">
+                <video src="vedio/main2_vedio2.mp4" loop autoplay muted></video>
+            </div>
+            <div id="main_page_vedio1_title2">
+                <img src="img/DATE JUST 41.png" alt="">
+            </div>
+            <div class="main_page_vedio1_back_bt2">
+                <img src="img/back_bt.png" alt="">
+            </div>
+            <!-- 이미지2동영상 -->
+            <div id="main_page_vedio3">
+                <video src="vedio/main2_vedio3.mp4" loop autoplay muted></video>
+            </div>
+            <div id="main_page_vedio1_title3">
+                <img src="img/Sky-Dweller.png" alt="">
+            </div>
+            <div class="main_page_vedio1_back_bt3">
+                <img src="img/back_bt.png" alt="">
+            </div>
+            <!-- 이미지3동영상 -->
+            <div id="main_page_vedio4">
+                <video src="vedio/main2_vedio4.mp4" loop autoplay muted></video>
+            </div>
+            <div id="main_page_vedio1_title4">
+                <img src="img/DATE JUST 31.png" alt="">
+            </div>
+            <div class="main_page_vedio1_back_bt4">
+                <img src="img/back_bt.png" alt="">
+            </div>
+            <!-- 이미지4동영상 -->
+            <div id="main_page_vedio5">
+                <video src="vedio/main2_vedio5.mp4" loop autoplay muted></video>
+            </div>
+            <div id="main_page_vedio1_title5">
+                <img src="img/Yacht-Master 42.png" alt="">
+            </div>
+            <div class="main_page_vedio1_back_bt5">
+                <img src="img/back_bt.png" alt="">
+            </div>
+            <!-- 이미지5동영상 -->
+            <div id="scroll_bt2">
+                <ul id="scroll_bt_box2">
+                    <li>
+                        <img src="img/Scroll Down.png" alt="">
+                    </li>
+                    <li>
+                        <img src="img/sc_arrow.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 3페이지 -->
+        <div id="main_page3">
+            <div class="menu_bt2">
+                <img src="icon/menu_bt.png" alt="">
+            </div>
+            <div id="main_page3_title">
+                <h2>
+                    <img src="img/A Masterpiece of The Century.png" alt="">
+                </h2>
+                <h3>
+                    <img src="img/line4.png" alt="">
+                </h3>
+                
+            </div>
+            <div class="sns_bt_line3">
+                <ul class="sns_bt">
+                    <li>
+                        <a href="https://www.instagram.com/rolex/" title="인스타링크" target="_blank">
+                            <img src="icon/insta_logo.png" alt="" >
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/c/ROLEX/featured" title="유튜브링크" target="_blank">
+                            <img src="icon/youtube_logo.png" alt="">
+                        </a>
+                       
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/rolex" title="페이스북링크" target="_blank">
+                            <img src="icon/facebook_logo.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/rolex" title="트위터링크" target="_blank">
+                            <img src="icon/twitter_logo.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="main_page3_img1">
+                <img src="3dd/(1).png" alt="">
+            </div>
+            <div id="main_page3_vedio">
+                <video src="vedio/The Rolex Submariner.mp4" loop autoplay muted></video>
+            </div>
+            <div id="main_page3_title1">
+                <img src="img/SUBMARINER2.png" alt="">
+            </div>
+            <div id="main_page3_title2">
+                <img src="img/The Oyster Perpetual Submariner is the epitome of the Diver Watch and the clock that opens the door to the deep sea..png" alt="">
+            </div>
+            <ul id="main3_scroll">
+                <li >
+                    <img src="img/Scroll Down.png" alt="">
+                    
+                </li>
+                <li>
+                    <img src="img/main3_arrow.png" alt="">
+                </li>
+            </ul>
+           
+        </div>
+            <!-- 페이지4 -->
+        <div id="main_page4">
+            <video src="vedio/new_submariner_video_cover.mp4" id="main_page4_video" loop autoplay muted>
+            </video>
+            <div id="main_page4_cover">
+                
+                <h3 id="main_page4_title">
+                    <img src="img/TrueDiverWatchDesign.png" alt="">
+                </h3>
+                <h4 id="main_page4_title_line">
+                    <img src="img/line1.png" alt="">
+                </h4>
+                <h4 id="main_page4_title2">
+                    <img src="img/Because it is a tool that greatly affects underwater survival,the watch is made based on the practical needs of divers. Since 1953,submariners have developed not only aesthetically but also technologi.png" alt="">
+                </h4>
+                <h5 id="main_page4_bt">
+                    <a href="https://www.youtube.com/watch?v=SRviJn5Wkko&t=4s" title="서브마리너" target="_blank">
+                        <img src="img/youtube_bt.png" alt="">
+                    </a>
+                </h5>
+            </div>
+        </div>
+        <!-- 페이지5-->
+        <div id="main_page5">
+             <div id="main_page5_title"> 
+                <img src="img/BEST.png" alt="">
+            </div>
+        
+            <div class="sns_bt_line5">
+                <ul class="sns_bt">
+                    <li>
+                        <a href="https://www.instagram.com/rolex/" title="인스타링크" target="_blank">
+                            <img src="icon/insta_logo.png" alt="" >
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/c/ROLEX/featured" title="유튜브링크" target="_blank">
+                            <img src="icon/youtube_logo.png" alt="">
+                        </a>
+                       
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/rolex" title="페이스북링크" target="_blank">
+                            <img src="icon/facebook_logo.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/rolex" title="트위터링크" target="_blank">
+                            <img src="icon/twitter_logo.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="page5_slide_box">
+                <ul class="page5_slide">
+                    <li>
+                        <img src="img/submariner_sl1.png" alt="">
+                        <div class="page5_slide_text">
+                            <h3>
+                                <img src="img/SUBMARINER DATE.png" alt="">
+                            </h3>
+                            <h4>
+                                <img src="img/OYSTER , 41mm , OYSTER STEEL.png" alt="">
+                            </h4>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/submariner_sl2.png" alt="">
+                        <div class="page5_slide_text">
+                            <h3>
+                                <img src="img/SUBMARINER DATE.png" alt="">
+                            </h3>
+                            <h4>
+                                <img src="img/OYSTER , 41mm , OYSTER STEEL , GREEN.png" alt="">
+                            </h4>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/submariner_sl3.png" alt="">
+                        <div class="page5_slide_text">
+                            <h3>
+                                <img src="img/SUBMARINER DATE.png" alt="">
+                            </h3>
+                            <h4>
+                                <img src="img/OYSTER , 41mm , OYSTER STEEL , Black.png" alt="">
+                            </h4>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/submariner_sl4.png" alt="">
+                        <div class="page5_slide_text">
+                            <h3>
+                                <img src="img/SUBMARINER DATE.png" alt="">
+                            </h3>
+                            <h4>
+                                <img src="img/OYSTER , 41mm , OYSTER STEEL ,  GLAY.png" alt="">
+                            </h4>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/submariner_sl5.png" alt="">
+                        <div class="page5_slide_text">
+                            <h3>
+                                <img src="img/SUBMARINER DATE.png" alt="">
+                            </h3>
+                            <h4>
+                                <img src="img/OYSTER , 41mm , OYSTER STEEL , BLUE.png " alt="">
+                            </h4>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/submariner_sl6.png" alt="">
+                        <div class="page5_slide_text">
+                            <h3>
+                                <img src="img/SUBMARINER DATE.png" alt="">
+                            </h3>
+                            <h4>
+                                <img src="img/OYSTER , 41mm , OYSTER STEEL , GOLD&BLUE.png" alt="">
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="button_box">
+                <img id="left_bt" src="img/left_bt.png" alt="">
+                <img id="right_bt" src="img/right_bt.png" alt="">
+            </div>
+            <div id="scroll_bt5">
+                <ul id="scroll_bt_box5">
+                    <li >
+                        <img src="img/Scroll Down.png" alt="">
+                        
+                    </li>
+                    <li>
+                        <img src="img/main3_arrow.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 페이지6-->
+        <div id="main_page6">
+            <div class="sns_bt_line6">
+                <ul class="sns_bt">
+                    <li>
+                        <a href="https://www.instagram.com/rolex/" title="인스타링크" target="_blank">
+                            <img src="icon/insta_logo.png" alt="" >
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/c/ROLEX/featured" title="유튜브링크" target="_blank">
+                            <img src="icon/youtube_logo.png" alt="">
+                        </a>
+                       
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/rolex" title="페이스북링크" target="_blank">
+                            <img src="icon/facebook_logo.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/rolex" title="트위터링크" target="_blank">
+                            <img src="icon/twitter_logo.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu_bt6">
+                <img src="icon/menu_bt.png" alt="">
+            </div>
+            <div id="page6_title">
+                <h2>
+                    <img src="img/Design.png" alt="">
+                </h2>
+            </div>
+            <div id="page6_slide_box">
+                <ul id="page6_slide">
+                    <li>
+                        <div id="page6_slide_wrap1">
+                            <img src="img/page6_slide_img1.png" alt="">
+                        </div>
+                        <div id="page6_slide_wrap2">
+                            <h3>
+                                <img src="img/RealDiver WatchDesign.png" alt="" id="page6_slide_text1">
+                            </h3>
+                            <h4>
+                                <img src="img/line2.png" alt="" id="page6_slide_text2">
+                            </h4>
+                            <h5>
+                                <img src="img/Because it is a tool that greatly affects underwater survival, the watch is built on the practical needs of divers. Since 1953, submariners have developed not only aesthetically but also technological2.png" alt="" id="page6_slide_text3">
+                            </h5>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="page6_slide_wrap4">
+                            <img src="img/page6_slide_img2.png" alt="" id="page6_slide2_img1">
+                        </div>
+                        <div id="page6_slide_wrap5">
+                            <h3>
+                                <img src="img/page6_slide_img3.png" alt="" id="page6_slide2_img2">
+                            </h3>
+                            <h4>
+                                <img src="img/page6_slide_img4.png" alt="" id="page6_slide2_img3">
+                            </h4>
+                        </div>
+                        <div id="page6_slide_wrap6">
+                            <img src="img/A slightly larger 41mm size, the new sub-mariner and sub-mariner date, featuring an Oyster case, a large luminous number marker, a one-way recirculation bezel with a Cerachrom insert, and an Oyster Br.png" alt="" id="page6_slide_text4">
+                        </div>
+                    </li>
+                    <li>
+                        <div id="page6_slide_wrap7">
+                            <img src="img/page6_slide_img5.png" alt="">
+                        </div>
+                        <div id="page6_slide_wrap8">
+                            <h3>
+                                <img src="img/Perfectvisibility and clarity.png" alt="" id="page6_slide_text5">
+                            </h3>
+                            <h4>
+                                <img src="img/line2.png" alt="" id="page6_slide_text6">
+                            </h4>
+                            <h5>
+                                <img src="img/Chromalight-processed dials are a critical innovation for divers that increase visibility in dark environments. Simple shapes and triangles, circles, squares, wide hands and minutes of visual markings.png" alt="" id="page6_slide_text7">
+                            </h5>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="button_box2">
+                <img id="left_bt2" src="img/left_bt.png" alt="">
+                <img id="right_bt2" src="img/right_bt.png" alt="">
+            </div>
+            <div id="scroll_bt6">
+                <ul id="scroll_bt_box6">
+                    <li>
+                        <img src="img/Down.png" alt="">
+                    </li>
+                    <li>
+                        <img src="img/sc_arrow.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 페이지7 -->
+        <div id="main_page7">
+            <video src="vedio/about-rolex-watches-hans-wilsdorf-cover.mp4" id="main_page7_video" loop autoplay muted>
+            </video>
+            <div id="main_page7_cover">
+                
+                <h3 id="main_page7_title">
+                    <img src="img/A Trip to the Rolex world.png" alt="">
+                </h3>
+                <h4 id="main_page7_title_line">
+                    <img src="img/line3.png" alt="">
+                </h4>
+                <h4 id="main_page7_title2">
+                    <img src="img/Hans Wilsdorf had a strong belief in the ability of people to pursue innovation and strive for excellence..png" alt="">
+                </h4>
+                <h5 id="main_page7_bt">
+                    <a href="https://www.youtube.com/watch?v=vooDhbcZSYA" title="창업주" target="_blank">
+                        <img src="img/youtube_bt.png" alt="">
+                    </a>
+                </h5>
+            </div>
+            <ul id="main7_scroll">
+                <li >
+                    <img src="img/Scroll Down2.png" alt="">
+                    
+                </li>
+                <li>
+                    <img src="img/main7_scroll_arrow.png" alt="">
+                </li>
+            </ul>
+        </div>
+        <!-- 페이지8 -->
+        <section id="main_page8">
+
+            <div id="page8_video">
+                <video src="vedio/about-rolex-watches-hans-wilsdorf-a-visionary-entrepreneur.mp4" muted autoplay loop></video>
+            </div>
+            <div id="page8_video_text1">
+                <h1>
+                    <img src="img/A visionaryBusinessman.png" alt="">
+                </h1>
+                <h4>
+                    <img src="img/line5.png" alt="">
+                </h4>
+                <h2>
+                    <img src="img/The Erly Day.png" alt="">
+                </h2>
+                <h3>
+                    <img src="img/The visionary businessman owned a headquarters in London and was on the verge of success in the 20th century. His goal was to introduce Rolex, a dial signature that was not yet known to the watchmakin.png" alt="">
+                </h3>
+            </div>
+            <div id="page8_mid_text_box">
+                <div id="page8_mid_text_title1">
+                    <img src="img/since1905.png" alt="">
+                </div>
+                <div id="page8_mid_text_title2">
+                    <img src="img/Unique Clock.png" alt="">
+                </div>
+                <div id="page8_mid_text_line">
+                    <img src="img/line8.png" alt="">
+                </div>
+                <ul id="text_box_scrrol">
+                    <li>
+                        <img src="img/Scroll Down.png" alt="" id="text_box_scrrol_img1">
+                    </li>
+                    <li>
+                        <img src="img/sc_arrow.png" alt="" id="text_box_scrrol_img2">
+                    </li>
+                </ul>
+            </div>
+            <div id="page8_main_img">
+                <img src="img/page8_img.png" alt="">
+
+            </div>
+            <div id="page8_bottom_box">
+                <div id="page8_bottom_title1">
+                    <img src="img/Rolex's history began with the pursuit of perfection and the desire to transcend boundaries..png" alt="">
+                </div>
+                <div id="page8_bottom_logo">
+                    <img src="img/page6_logo.png" alt="">
+                </div>
+                <div id="page8_bottom_title2">
+                    <img src="img/It's a history of trying for better results,never giving up, and thinking creatively..png" alt="">
+                </div>
+            </div>
+            <div id="page8_bottom_video">
+                <video src="vedio/about-rolex-watches-hans-wilsdorf-video.mp4" loop autoplay muted></video>
+            </div>
+        </section>
+        <section id="main_page9">
+            <div id="page9_video">
+                <video src="vedio/about-rolex-watches-hans-wilsdorf-sav.webm" muted loop autoplay></video>
+            </div>
+            <div id="main_page9_text">
+                <h1><img src="img/Believe in Rolex.png" alt=""></h1>
+            </div>
+        </section>
+        <footer>
+
+        </footer>
+    </div>
+    <p>0</p>
+</body>
+</html>
